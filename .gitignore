@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Rust
+target/
+Cargo.lock
+
+# Advent of Code
+input/
