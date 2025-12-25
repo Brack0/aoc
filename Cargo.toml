@@ -1,5 +1,5 @@
 [workspace]
-members = ["2025/*"]
+members = ["2024/*","2025/*"]
 resolver = "3"
 
 [workspace.package]
