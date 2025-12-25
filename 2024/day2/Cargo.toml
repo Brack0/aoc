@@ -1,0 +1,7 @@
+[package]
+name="day2-2024"
+edition.workspace = true
+version.workspace = true
+
+[lints]
+workspace = true
