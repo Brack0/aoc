@@ -25,3 +25,13 @@ Production mode
 cargo build --release
 hyperfine --warmup 3 [binary]
 ```
+
+## Running a day
+
+From the repository root:
+
+```sh
+cargo run -p day1-2024
+```
+
+The input is read from that package's `input/raw.txt`.

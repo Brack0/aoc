@@ -2,6 +2,7 @@ use std::{
     collections::{HashMap, HashSet},
     fs::File,
     io::{self, BufRead, BufReader},
+    path::Path,
 };
 
 fn main() -> io::Result<()> {
@@ -19,7 +20,7 @@ fn main() -> io::Result<()> {
 }
 
 fn read_input() -> io::Result<Vec<String>> {
-    let file = File::open("input/raw.txt")?;
+    let file = File::open(Path::new(env!("CARGO_MANIFEST_DIR")).join("input/raw.txt"))?;
     BufReader::new(file).lines().collect::<Result<_, _>>()
 }
 
